@@ -36,7 +36,7 @@
                 <td>{{$result->posts_in_fte}}</td>
                 <td>{{$result->profession}}</td>
                 <td>
-                    <a class="btn-xs btn btn-info" href="">view</a>
+                    <a class="btn-xs btn btn-info" href="/data/{{$result->id}}">view</a>
                     <a class="btn-xs btn btn-primary" href="">edit</a>
                     <a class="btn-xs btn btn-danger" href="">delete</a>
                 </td>

@@ -44,7 +44,14 @@ class DataController extends \BaseController {
 	 */
 	public function show($id)
 	{
-		//
+        try{
+            $result = Data::findOrFail($id);
+            return View::make('data.show',compact('result'));
+
+        } catch(ModelNotFoundException $e){
+            return Redirect::to('/');
+        }
+
 	}
 
 
